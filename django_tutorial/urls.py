@@ -11,4 +11,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home),
+    url(r'^show_write_form/$', views.show_write_form),
+    url(r'^DoWriteBoard/$', views.DoWriteBoard),
+    url(r'^listSpecificPageWork/$', views.listSpecificPageWork),
 )
