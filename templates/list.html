@@ -1,0 +1,15 @@
+
+Hello World in template
+
+{{ posts }}
+<table>
+{% for post in posts %}
+<tr>
+	<td> {{ post.id }} </td>
+	<td> {{ post.writer }} </td>
+	<td> {{ post.subject }} </td>
+	<td> {{ post.content }} </td>
+	<td> {{ post.created_at }} </td>
+</tr>
+{% endfor %}
+</table>
