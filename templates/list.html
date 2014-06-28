@@ -11,12 +11,8 @@
 </style>
 
 
-Hello World in template
+comment
 
-
-
-
-{{ posts }}
 <table id="board" border=1 align=center width="70%" cellspacing=0 >
 {% for post in posts %}
 <tr>
@@ -24,6 +20,23 @@ Hello World in template
 	<td> {{ post.writer }} </td>
 	<td> {{ post.subject }} </td>
 	<td> {{ post.created_at }} </td>
+</tr>
+{% endfor %}
+</table>
+
+
+
+<table id="board" border=1 align=center width="70%" cellspacing=0 >
+<tr>
+	<td>날자</td>
+	<td>제목</td>
+	<td>내용</td>
+</tr>
+{% for Mainlists in Mainlist %}
+<tr>
+	<td>{{Mainlists.0}}</td>
+	<td>{{Mainlists.1}}</td>
+	<td>{{Mainlists.2}}</td>
 </tr>
 {% endfor %}
 </table>
